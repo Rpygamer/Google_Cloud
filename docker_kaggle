@@ -1,4 +1,8 @@
-
-
-
+sudo apt-get install
+curl -fsSL https://get.docker.com/ | sh
+sudo usermod -a -G docker $USER
+sudo groupadd docker && sudo gpasswd -a ${USER} docker && sudo systemctl restart docker 
+newgrp docker
+docker pull kaggle/python
+sudo docker run -v $PWD:/tmp/working -w=/tmp/working -p 8888:8888 --rm -it kaggle/python
 sudo docker run -v $PWD:/tmp/working -w=/tmp/working -p 1111:1111 --rm -it kaggle/python
