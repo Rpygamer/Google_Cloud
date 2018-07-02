@@ -1,0 +1,4 @@
+
+
+
+sudo docker run -v $PWD:/tmp/working -w=/tmp/working -p 1111:1111 --rm -it kaggle/python
