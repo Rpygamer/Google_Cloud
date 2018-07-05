@@ -3,4 +3,7 @@ Exemple:
 !gsutil cp gs://kaggle-201621/test.csv.zip test.csv.zip 
 
 from VM to google storage
+curl https://sdk.cloud.google.com | bash
+exec -l $SHELL
+gcloud init
 gsutil cp file1 file2 gs://bucket
