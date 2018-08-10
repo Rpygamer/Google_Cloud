@@ -7,3 +7,11 @@ curl https://sdk.cloud.google.com | bash
 exec -l $SHELL
 gcloud init
 gsutil cp file1 file2 gs://bucket
+
+
+
+gsutil config -b
+
+Then surf to the URL it provides, [ CLICK Allow ]
+
+Then copy the verification code and paste to terminal.
